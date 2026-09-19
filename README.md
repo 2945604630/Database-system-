@@ -36,3 +36,7 @@ npm run build
 
 不包含账号、云同步、AI 助手、排行榜、打卡、社区或公网部署。
 
+## GitHub Pages
+
+仓库已包含 GitHub Actions 构建与 Pages 部署工作流。若要启用公开页面，在仓库 Settings → Pages 中将构建来源设为 GitHub Actions，然后在 Settings → Secrets and variables → Actions → Variables 添加 `PAGES_ENABLED=true`，再重新运行工作流。当前连接无法代替仓库管理员修改 Pages 设置，因此代码已推送、CI 构建可直接运行，Pages 部署保留为可启用步骤。
+
